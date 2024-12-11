@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaveifyMobileXamarinApplication.Views.AboutPage"
+             xmlns:vm="clr-namespace:WaveifyMobileXamarinApplication.ViewModels"
+             Title="{Binding Title}" BackgroundColor="Black">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#121212</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+ 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <ScrollView Grid.Row="1">
+            <StackLayout>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350"  BackgroundColor="#121212" HorizontalOptions="Center">
+
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+     
+ </Frame>
+            </StackLayout>
+           
+           
+        </ScrollView>
+        </Grid>
+ 
+
+</ContentPage>
