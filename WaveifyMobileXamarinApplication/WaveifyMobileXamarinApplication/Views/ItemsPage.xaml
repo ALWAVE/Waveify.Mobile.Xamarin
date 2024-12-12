@@ -5,7 +5,7 @@
              Title="{Binding Title}"
              xmlns:local="clr-namespace:WaveifyMobileXamarinApplication.ViewModels"  
              xmlns:model="clr-namespace:WaveifyMobileXamarinApplication.Models"  
-             x:Name="BrowseItemsPage" BackgroundColor="Black">
+             x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
