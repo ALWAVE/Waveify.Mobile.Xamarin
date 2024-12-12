@@ -5,6 +5,11 @@
              xmlns:vm="clr-namespace:WaveifyMobileXamarinApplication.ViewModels"
              Title="{Binding Title}" BackgroundColor="Black">
     
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Text="Account" Command="{Binding LoginPageView}" />
+    </ContentPage.ToolbarItems>
+ 
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
@@ -25,15 +30,43 @@
             <ScrollView Grid.Row="1">
             <StackLayout>
                 <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350"  BackgroundColor="#121212" HorizontalOptions="Center">
-                   
-                   
+                    <Image Source="image_11.jpg" />
                 </Frame>
                 <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="image_22.jpg" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="image_33.jpg" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://icdn.lenta.ru/images/2021/12/28/20/20211228202958360/square_1280_662749ae3f8f3d2f16c96ca21fbd3eba.jpg" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://kartinkof.club/uploads/posts/2022-03/1648335141_31-kartinkof-club-p-nachalnik-mem-31.png" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://pikuco.ru/upload/test_stable/87d/87db37e35e0cd6687a71381f1005da89.webp" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://i.pinimg.com/474x/2e/b2/a4/2eb2a43d3408e0254540dddc8bde84de.jpg" />
+                </Frame>
+                
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://i.pinimg.com/736x/73/6b/db/736bdbb8c3df27d51891d4f2f097b3c3.jpg" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://habrastorage.org/r/w1560/webt/m9/z5/vw/m9z5vwnbzblbe0xgppboty60nbo.png" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://habrastorage.org/webt/ho/dq/hg/hodqhg2mbntyun5bpog6gjvzle4.png" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="https://habrastorage.org/r/w1560/webt/je/vv/bc/jevvbchpcl5dh-i-g8whb9zsftk.png" />
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <Image Source="image_33.jpg" />
+                </Frame>
 
-                </Frame>
-                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
-     
-                </Frame>
             </StackLayout>
            
            
