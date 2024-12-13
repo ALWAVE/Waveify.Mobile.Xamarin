@@ -10,7 +10,7 @@
         <ToolbarItem  Text="Account" Command="{Binding LoginPageView}" />
     </ContentPage.ToolbarItems>
  
-    <ContentPage.BindingContext>
+    <ContentPage.BindingContext>    
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
    

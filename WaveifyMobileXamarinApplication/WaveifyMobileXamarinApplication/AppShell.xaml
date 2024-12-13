@@ -31,7 +31,7 @@
   
     <TabBar>
         <ShellContent Title="Home" Icon="home_45px_grey.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Search" Icon="search_45px_grey_v2.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Search" Icon="search_45px_grey_v2.png" ContentTemplate="{DataTemplate local:SearchPage}" />
         <ShellContent Title="My File" Icon="music_45px_grey.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
 

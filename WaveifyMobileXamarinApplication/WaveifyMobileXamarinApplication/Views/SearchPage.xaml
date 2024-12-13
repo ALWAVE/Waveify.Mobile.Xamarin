@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WaveifyMobileXamarinApplication.Views.LoginPage"
-             Shell.NavBarIsVisible="False" BackgroundColor="#222">
-
+             x:Class="WaveifyMobileXamarinApplication.Views.SearchPage">
     <ContentPage.Resources>
         <Style x:Key="credentialTxTtitleStyle" TargetType="Label">
             <Setter Property="HorizontalOptions" Value="Start"/>
@@ -25,48 +23,28 @@
         <Style  x:Key="welcomeLabel" TargetType="Label">
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontSize" Value="30"/>
-        
+
         </Style>
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" Value="Transparent"/>
             <Setter Property="TextColor" Value="#A3A3A4"/>
         </Style>
     </ContentPage.Resources>
-
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button WidthRequest="-50" BackgroundColor="Black" TextColor="White" Text="Back"/>
-            <Image Source="icon.png" />
-            <Label HorizontalOptions="Center" Text="Yooo, welcome to waveify!" Style="{StaticResource welcomeLabel}"/>
-            <Label HorizontalOptions="Center" Text="Welcome" Style="{StaticResource credentialTxTtitleStyle}"/>
-            <!-- Email Frame -->
-            <Frame BorderColor="#282729" CornerRadius="20" BackgroundColor="#222223" Padding="10" Margin="0,5">
-                <StackLayout>
-                    <Entry x:Name="email" Style="{StaticResource credentialsTxTStyle}" Placeholder="Your email" />
-                </StackLayout>
-            </Frame>
+        <StackLayout BackgroundColor="Black">
+            <Label TextColor="White" Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
 
-            <!-- Password Frame -->
-            <Frame BorderColor="#282729" CornerRadius="20" BackgroundColor="#222223" Padding="10" Margin="0,5">
+
+
+            <Frame BorderColor="#282729" CornerRadius="20" BackgroundColor="#222223" Padding="10" Margin="15,5">
                 <StackLayout>
                     <!-- <Label Text="Password" Style="{StaticResource credentialTxTtitleStyle}"/> <Label Text="Password" Style="{StaticResource credentialTxTtitleStyle}"/> -->
-                    <Entry x:Name="passbox" Style="{StaticResource credentialsTxTStyle}" Placeholder="Your password" IsPassword="True"/>
+                    <Entry x:Name="passbox" Style="{StaticResource credentialsTxTStyle}" Placeholder="Search"  />
                 </StackLayout>
             </Frame>
-
-            <Button Text="Sign in" 
-                    BackgroundColor="White" 
-                    TextColor="Black" 
-                    CornerRadius="15" 
-                    BorderColor="#282729"
-                    BorderWidth="2"
-                   
-                    VerticalOptions="Center" 
-                    Command="{Binding LoginCommand}"
-                    >
-
-            </Button>
-            
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
