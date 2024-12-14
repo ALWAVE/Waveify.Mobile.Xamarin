@@ -35,7 +35,7 @@
 
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button WidthRequest="-50" BackgroundColor="Black" TextColor="White" Text="Back"/>
+         
             <Image Source="icon.png" />
             <Label HorizontalOptions="Center" Text="Yooo, welcome to waveify!" Style="{StaticResource welcomeLabel}"/>
             <Label HorizontalOptions="Center" Text="Welcome" Style="{StaticResource credentialTxTtitleStyle}"/>

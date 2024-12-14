@@ -18,9 +18,9 @@ namespace WaveifyMobileXamarinApplication.ViewModels
         public ICommand OpenWebCommand { get; }
         private async void OnLoginPageView()
         {
-            // Здесь вы можете заменить текущую страницу на новую
-            var loginPage = new LoginPage(); // Предполагается, что у вас есть LoginPage
-            await Application.Current.MainPage.Navigation.PushAsync(loginPage);
+           
+            var pofilePage = new ProfilePage(); 
+            await Application.Current.MainPage.Navigation.PushAsync(pofilePage);
         }
     }
 }
