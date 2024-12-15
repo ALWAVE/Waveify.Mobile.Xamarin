@@ -54,7 +54,7 @@
                 </StackLayout>
             </Frame>
 
-            <Button Text="Sign in" 
+            <Button Text="Log in" 
                     BackgroundColor="White" 
                     TextColor="Black" 
                     CornerRadius="15" 
@@ -66,7 +66,20 @@
                     >
 
             </Button>
-            
+          
+                <Button TextColor="White" 
+                Margin="15"
+                WidthRequest="150"
+                Text="Sign in using magic link" 
+                FontSize="10" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                BorderColor="White"
+                BorderWidth="1"
+                CornerRadius="30"
+                BackgroundColor="Transparent"
+                Clicked="OnButtonClickedSignInLink"/>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

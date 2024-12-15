@@ -6,5 +6,6 @@ namespace WaveifyMobileXamarinApplication.ViewModels
 {
     public class ProfileViewModel : BaseViewModel  
     {
+        
     }
 }

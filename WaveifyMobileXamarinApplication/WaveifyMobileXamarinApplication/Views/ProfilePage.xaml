@@ -31,17 +31,18 @@
                        VerticalOptions="Center" 
                        TextColor="White"/>
             </StackLayout>
-          
-            <Button Style="{StaticResource crazyButton}" 
-             CornerRadius="25" 
-             BorderWidth="1" 
-             BorderColor="Gray" 
-             BackgroundColor="Transparent"
-             Margin="10"
-             Text="Изменить"/>
-            
-          
-          
+            <StackLayout>
+                <Button Style="{StaticResource crazyButton}" 
+                  CornerRadius="25" 
+                  BorderWidth="1" 
+                  BorderColor="Gray" 
+                  BackgroundColor="Transparent"
+                  Margin="10"
+                  Text="Изменить"
+                  Clicked="OnChangeButtonClicked"/>
+            </StackLayout>
+           
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
