@@ -31,7 +31,7 @@
             <StackLayout>
                 <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
                     <StackLayout>
-                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Лучший трек в Waveify"/>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Лучший трек в Waveify" FontFamily="IPTMedium"/>
                         <Label TextColor="White"  Text="{Binding BestNameArtist}"/>
                         <Label TextColor="White" Text="{Binding BestNameSongArtist}"/>
                         <Image Source="{Binding BestSongArtistUrlImage}" />
@@ -39,45 +39,45 @@
                 </Frame>
                 <Frame CornerRadius="30" BackgroundColor="#121212" HorizontalOptions="Center">
                     <StackLayout Orientation="Vertical">
-                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Чарты в Waveify"/>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Чарты в Waveify" FontFamily="IPTMedium"/>
                         <!-- Chart 1 -->
                         <StackLayout>
                             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
-                                <Label TextColor="Green" Text="1 place"/>
-                                <Label HorizontalOptions="Center" TextColor="White" Text="{Binding Chart1NameArtist}"/>
-                                <Label TextColor="White" Text="{Binding Chart1NameSongArtist}"/>
+                                <Label TextColor="Green" Text="1 place" FontFamily ="FirsNeueMedium"/>
+                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart1NameArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart1NameSongArtist}"/>
                             </StackLayout>
                             <Image HeightRequest="200" Source="{Binding Chart1SongArtistUrlImage}"/>
                         </StackLayout>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
-                                <Label TextColor="Green" Text="2 place"/>
-                                <Label HorizontalOptions="Center" TextColor="White" Text="{Binding Chart2NameArtist}"/>
-                                <Label TextColor="White" Text="{Binding Chart2NameSongArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="Green" Text="2 place"/>
+                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart2NameArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart2NameSongArtist}"/>
                             </StackLayout>
                             <Image HeightRequest="200"  Source="{Binding Chart2SongArtistUrlImage}"/>
                         </StackLayout>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                                <Label TextColor="Orange" Text="3 place"/>
-                                <Label HorizontalOptions="Center" TextColor="White" Text="{Binding Chart3NameArtist}"/>
-                                <Label TextColor="White" Text="{Binding Chart3NameSongArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="Orange" Text="3 place"/>
+                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart3NameArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart3NameSongArtist}"/>
                             </StackLayout>
                             <Image HeightRequest="200"  Source="{Binding Chart3SongArtistUrlImage}"/>
                         </StackLayout>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                                <Label TextColor="Orange" Text="4 place"/>
-                                <Label HorizontalOptions="Center" TextColor="White" Text="{Binding Chart4NameArtist}"/>
-                                <Label TextColor="White" Text="{Binding Chart4NameSongArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="Orange" Text="4 place"/>
+                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart4NameArtist}"/>
+                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart4NameSongArtist}"/>
                             </StackLayout>
                             <Image HeightRequest="200"  Source="{Binding Chart4SongArtistUrlImage}"/>
                         </StackLayout>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                                <Label TextColor="Red" Text="5 place"/>
-                                <Label HorizontalOptions="Center" TextColor="White" Text="{Binding Chart5NameArtist}"/>
-                                <Label TextColor="White" Text="{Binding Chart5NameSongArtist}"/>
+                                <Label FontFamily ="IPTMedium" TextColor="Red" Text="5 place"/>
+                                <Label FontFamily ="IPTMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart5NameArtist}"/>
+                                <Label FontFamily ="IPTMedium" TextColor="White" Text="{Binding Chart5NameSongArtist}"/>
                             </StackLayout>
                             <Image HeightRequest="200"  Source="{Binding Chart5SongArtistUrlImage}"/>
                         </StackLayout>
