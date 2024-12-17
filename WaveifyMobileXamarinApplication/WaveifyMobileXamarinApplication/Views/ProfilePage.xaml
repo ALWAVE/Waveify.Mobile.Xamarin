@@ -25,11 +25,13 @@
                     <Label Text="C"
                            FontSize="30" TextColor="Black" 
                            HorizontalOptions="Center" 
-                           VerticalOptions="Center"/>
+                           VerticalOptions="Center"
+                           FontFamily="IPTMedium"/>
                 </Frame>
                 <Label Text="ChistieRoudi" 
                        VerticalOptions="Center" 
-                       TextColor="White"/>
+                       TextColor="White"
+                       FontFamily="IPTMedium"/>
             </StackLayout>
             <StackLayout>
                 <Button Style="{StaticResource crazyButton}" 
@@ -39,6 +41,7 @@
                   BackgroundColor="Transparent"
                   Margin="10"
                   Text="Изменить"
+                  FontFamily="IPTMedium"
                   Clicked="OnChangeButtonClicked"/>
             </StackLayout>
            

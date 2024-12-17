@@ -106,10 +106,5 @@
     <EmbeddedResource Include="Resources\Toolbar\search_45px_white.png" />
     <EmbeddedResource Include="Resources\Toolbar\search_45px_white_v2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\image_11.jpg" />
-    <AndroidResource Include="Resources\drawable\image_33.jpg" />
-    <AndroidResource Include="Resources\drawable\image_22.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

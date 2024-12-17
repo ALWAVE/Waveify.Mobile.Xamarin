@@ -37,7 +37,7 @@
                         <Image Source="{Binding BestSongArtistUrlImage}" />
                     </StackLayout>
                 </Frame>
-                <Frame CornerRadius="30" BackgroundColor="#121212" HorizontalOptions="Center">
+                <Frame WidthRequest="400" CornerRadius="30" BackgroundColor="#121212" HorizontalOptions="Center">
                     <StackLayout Orientation="Vertical">
                         <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Чарты в Waveify" FontFamily="IPTMedium"/>
                         <!-- Chart 1 -->
@@ -81,6 +81,14 @@
                             </StackLayout>
                             <Image HeightRequest="200"  Source="{Binding Chart5SongArtistUrlImage}"/>
                         </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                    <StackLayout>
+                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Лучший по мнению Waveify" FontFamily="IPTMedium"/>
+                        <Label TextColor="White"  Text="{Binding BestNameArtist}"/>
+                        <Label TextColor="White" Text="{Binding BestNameSongArtist}"/>
+                        <Image Source="{Binding BestSongArtistUrlImage}" />
                     </StackLayout>
                 </Frame>
             </StackLayout>
