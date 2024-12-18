@@ -29,14 +29,38 @@
 
             <ScrollView Grid.Row="1">
             <StackLayout>
-                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
+                
+                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="Transparent" HorizontalOptions="Center">
                     <StackLayout>
-                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Лучший трек в Waveify" FontFamily="IPTMedium"/>
-                        <Label TextColor="White"  Text="{Binding BestNameArtist}"/>
-                        <Label TextColor="White" Text="{Binding BestNameSongArtist}"/>
-                        <Image Source="{Binding BestSongArtistUrlImage}" />
+                        <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Лучший артист в Waveify" FontFamily="IPTMedium"/>
+                        <StackLayout Orientation="Horizontal">
+
+                            <StackLayout  Margin="0, 0, 0, -25">
+                                <Frame HorizontalOptions="Start" HeightRequest="80" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="{Binding BestSongArtistUrlImage}" />
+                                </Frame>
+                                <Label TextColor="White" Margin="-15" Text="{Binding BestNameArtist}" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 0, 0, -25">
+                                <Frame HorizontalOptions="Start" HeightRequest="80" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="{Binding BestSongArtistUrlImage}" />
+                                </Frame>
+                                <Label TextColor="White" Margin="-15" Text="{Binding BestNameArtist}" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 0, 0, -25">
+                                <Frame HorizontalOptions="Start" HeightRequest="80" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="{Binding BestSongArtistUrlImage}" />
+                                </Frame>
+                                <Label TextColor="White" Margin="-15" Text="{Binding BestNameArtist}" HorizontalOptions="Center"/>
+                            </StackLayout>
+                           
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
+                
+                
+                
+                
                 <Frame WidthRequest="400" CornerRadius="30" BackgroundColor="#121212" HorizontalOptions="Center">
                     <StackLayout Orientation="Vertical">
                         <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Чарты в Waveify" FontFamily="IPTMedium"/>

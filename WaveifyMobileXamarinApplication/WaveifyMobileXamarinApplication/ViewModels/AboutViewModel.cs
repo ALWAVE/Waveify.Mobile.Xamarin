@@ -203,7 +203,7 @@ namespace WaveifyMobileXamarinApplication.ViewModels
 
         public AboutViewModel()
         {
-            Title = "Waveify";
+            Title = "Good Evening✨";
             CompletionContent();
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
             LoginPageView = new Command(OnLoginPageView);

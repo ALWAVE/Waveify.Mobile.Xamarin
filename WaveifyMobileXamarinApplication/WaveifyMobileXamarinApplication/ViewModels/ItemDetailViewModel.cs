@@ -19,7 +19,6 @@ namespace WaveifyMobileXamarinApplication.ViewModels
             get => text;
             set => SetProperty(ref text, value);
         }
-
         public string Description
         {
             get => description;
@@ -38,7 +37,6 @@ namespace WaveifyMobileXamarinApplication.ViewModels
                 LoadItemId(value);
             }
         }
-
         public async void LoadItemId(string itemId)
         {
             try
