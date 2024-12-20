@@ -29,90 +29,216 @@
 
             <ScrollView Grid.Row="1">
             <StackLayout>
-                
-                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="Transparent" HorizontalOptions="Center">
-                    <StackLayout>
-                        <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Лучший артист в Waveify" FontFamily="IPTMedium"/>
-                        <StackLayout Orientation="Horizontal">
 
+                <Frame CornerRadius="30" BackgroundColor="Transparent" HorizontalOptions="Center">
+                    <StackLayout Margin="0,20,0,20">
+                        <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Лучший артист в Waveify" FontFamily="FirsNeueMedium" />
+                        <StackLayout Orientation="Horizontal">
                             <StackLayout  Margin="0, 0, 0, -25">
                                 <Frame HorizontalOptions="Start" HeightRequest="80" BackgroundColor="Transparent" CornerRadius="30">
-                                    <Image Source="{Binding BestSongArtistUrlImage}" />
+                                    <Image Source="https://icdn.lenta.ru/images/2024/09/01/19/20240901194821568/square_320_5691c4d911e4cc6e178c8338598c5594.jpg" />
                                 </Frame>
-                                <Label TextColor="White" Margin="-15" Text="{Binding BestNameArtist}" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueMedium"  TextColor="White" Margin="-15" Text="KIZARU" HorizontalOptions="Center"/>
                             </StackLayout>
                             <StackLayout Margin="0, 0, 0, -25">
                                 <Frame HorizontalOptions="Start" HeightRequest="80" BackgroundColor="Transparent" CornerRadius="30">
-                                    <Image Source="{Binding BestSongArtistUrlImage}" />
+                                    <Image Source="https://images.genius.com/a502be344e671ddaf9ceb9a8a127ef48.709x709x1.jpg" />
                                 </Frame>
-                                <Label TextColor="White" Margin="-15" Text="{Binding BestNameArtist}" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueMedium" TextColor="White" Margin="-15" Text="Friendly Thug 52" HorizontalOptions="Center"/>
                             </StackLayout>
                             <StackLayout Margin="0, 0, 0, -25">
                                 <Frame HorizontalOptions="Start" HeightRequest="80" BackgroundColor="Transparent" CornerRadius="30">
-                                    <Image Source="{Binding BestSongArtistUrlImage}" />
+                                    <Image Source="https://i1.sndcdn.com/artworks-Th2WCLqgENpL-0-t500x500.jpg" />
                                 </Frame>
-                                <Label TextColor="White" Margin="-15" Text="{Binding BestNameArtist}" HorizontalOptions="Center"/>
+                                <Label  FontFamily="FirsNeueMedium"  TextColor="White" Margin="-15" Text="Реpel Nahudi" HorizontalOptions="Center"/>
                             </StackLayout>
-                           
                         </StackLayout>
                     </StackLayout>
                 </Frame>
-                
-                
-                
-                
-                <Frame WidthRequest="400" CornerRadius="30" BackgroundColor="#121212" HorizontalOptions="Center">
-                    <StackLayout Orientation="Vertical">
-                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Чарты в Waveify" FontFamily="IPTMedium"/>
+                <Frame CornerRadius="30" Margin="0, 0, 20, 0" BackgroundColor="Transparent" HorizontalOptions="Center">
+                    <StackLayout Margin="0,0,0,45">
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Лучший трек в Waveify" FontFamily="FirsNeueMedium" />
+                            <Button FontFamily="FirsNeueMedium" TextColor="#444" Text="See all >"/>
+                        </StackLayout>
+                       
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout  Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="https://avatars.yandex.net/get-music-content/6201394/e34d53eb.a.22172320-1/m1000x1000" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium"  TextColor="White" Margin="-15" Text="Friendly Thug 52" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="Calmer" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="0">
+                                    <Image Source="https://i1.sndcdn.com/artworks-rnAuB2eWWqqIRpuH-PVuA9Q-t500x500.jpg" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium" TextColor="White" Margin="-15" Text="KIZARU" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="Russian Most Wanted" HorizontalOptions="Center"/>
+                            </StackLayout>
+                         
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Label x:Name="StatusLabel"
+                       Text=""
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="20"
+                       Margin="0,20,0,0"/>
+                    <Button BackgroundColor="#a817ad" CornerRadius="20" HorizontalOptions="End" Text="Sponsor" BorderColor="White" BorderWidth="2" Clicked="OnButtonClicked" />
+                </StackLayout>
+              
+                <Frame WidthRequest="400" CornerRadius="30" BackgroundColor="Transparent" HorizontalOptions="Center">
+                    <StackLayout Padding="10">
+                        <Label FontFamily="FirsNeueMedium" TextColor="White" HorizontalOptions="Start" FontSize="20" Text="Чарты в Waveify"  />
+
                         <!-- Chart 1 -->
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
-                                <Label TextColor="Green" Text="1 place" FontFamily ="FirsNeueMedium"/>
-                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart1NameArtist}"/>
-                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart1NameSongArtist}"/>
+                        <StackLayout Padding="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <!-- Изображение -->
+                                <Image HeightRequest="70" Source="{Binding Chart1SongArtistUrlImage}" />
+                                <!-- Информация о песне -->
+                                <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="10">
+                                    <Label TextColor="Green" Text="1 место" FontFamily="FirsNeueMedium" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueMedium" TextColor="White" Text="{Binding Chart1NameArtist}" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueLight"  TextColor="White" Text="{Binding Chart1NameSongArtist}" HorizontalOptions="Start"/>
+                                </StackLayout>
                             </StackLayout>
-                            <Image HeightRequest="200" Source="{Binding Chart1SongArtistUrlImage}"/>
                         </StackLayout>
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" >
-                                <Label FontFamily ="FirsNeueMedium" TextColor="Green" Text="2 place"/>
-                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart2NameArtist}"/>
-                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart2NameSongArtist}"/>
+                        <!-- Chart 1 -->
+                        <StackLayout Padding="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <!-- Изображение -->
+                                <Image HeightRequest="70" Source="{Binding Chart2SongArtistUrlImage}" />
+                                <!-- Информация о песне -->
+                                <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="10">
+                                    <Label TextColor="Green" Text="2 место" FontFamily="FirsNeueMedium" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueMedium" TextColor="White" Text="{Binding Chart2NameArtist}" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueLight"  TextColor="White" Text="{Binding Chart2NameSongArtist}" HorizontalOptions="Start"/>
+                                </StackLayout>
                             </StackLayout>
-                            <Image HeightRequest="200"  Source="{Binding Chart2SongArtistUrlImage}"/>
                         </StackLayout>
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                                <Label FontFamily ="FirsNeueMedium" TextColor="Orange" Text="3 place"/>
-                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart3NameArtist}"/>
-                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart3NameSongArtist}"/>
+                        <!-- Chart 1 -->
+                        <StackLayout Padding="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <!-- Изображение -->
+                                <Image HeightRequest="70" Source="{Binding Chart3SongArtistUrlImage}" />
+                                <!-- Информация о песне -->
+                                <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="10">
+                                    <Label TextColor="Orange" Text="3 место" FontFamily="FirsNeueMedium" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueMedium" TextColor="White" Text="{Binding Chart3NameArtist}" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueLight"  TextColor="White" Text="{Binding Chart3NameSongArtist}" HorizontalOptions="Start"/>
+                                </StackLayout>
                             </StackLayout>
-                            <Image HeightRequest="200"  Source="{Binding Chart3SongArtistUrlImage}"/>
                         </StackLayout>
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                                <Label FontFamily ="FirsNeueMedium" TextColor="Orange" Text="4 place"/>
-                                <Label FontFamily ="FirsNeueMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart4NameArtist}"/>
-                                <Label FontFamily ="FirsNeueMedium" TextColor="White" Text="{Binding Chart4NameSongArtist}"/>
+                        <!-- Chart 1 -->
+                        <StackLayout Padding="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <!-- Изображение -->
+                                <Image HeightRequest="70" Source="{Binding Chart4SongArtistUrlImage}" />
+                                <!-- Информация о песне -->
+                                <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="10">
+                                    <Label TextColor="Orange" Text="4 место" FontFamily="FirsNeueMedium" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueMedium" TextColor="White" Text="{Binding Chart4NameArtist}" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueLight"  TextColor="White" Text="{Binding Chart4NameSongArtist}" HorizontalOptions="Start"/>
+                                </StackLayout>
                             </StackLayout>
-                            <Image HeightRequest="200"  Source="{Binding Chart4SongArtistUrlImage}"/>
                         </StackLayout>
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                                <Label FontFamily ="IPTMedium" TextColor="Red" Text="5 place"/>
-                                <Label FontFamily ="IPTMedium" HorizontalOptions="Center" TextColor="White" Text="{Binding Chart5NameArtist}"/>
-                                <Label FontFamily ="IPTMedium" TextColor="White" Text="{Binding Chart5NameSongArtist}"/>
+                        <!-- Chart 1 -->
+                        <StackLayout Padding="10">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                <!-- Изображение -->
+                                <Image HeightRequest="70" Source="{Binding Chart5SongArtistUrlImage}" />
+                                <!-- Информация о песне -->
+                                <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="10">
+                                    <Label TextColor="Red" Text="5 место" FontFamily="FirsNeueMedium" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueMedium" TextColor="White" Text="{Binding Chart5NameArtist}" HorizontalOptions="Start"/>
+                                    <Label FontFamily="FirsNeueLight"  TextColor="White" Text="{Binding Chart5NameSongArtist}" HorizontalOptions="Start"/>
+                                </StackLayout>
                             </StackLayout>
-                            <Image HeightRequest="200"  Source="{Binding Chart5SongArtistUrlImage}"/>
                         </StackLayout>
                     </StackLayout>
                 </Frame>
-                <Frame CornerRadius="30" WidthRequest="400" HeightRequest="350" BackgroundColor="#121212" HorizontalOptions="Center">
-                    <StackLayout>
-                        <Label TextColor="White" HorizontalOptions="Center" FontSize="20" Text="Лучший по мнению Waveify" FontFamily="IPTMedium"/>
-                        <Label TextColor="White"  Text="{Binding BestNameArtist}"/>
-                        <Label TextColor="White" Text="{Binding BestNameSongArtist}"/>
-                        <Image Source="{Binding BestSongArtistUrlImage}" />
+                <Frame CornerRadius="30" Margin="0, 0, 20, 0" BackgroundColor="Transparent" HorizontalOptions="Center">
+                    <StackLayout Margin="0,0,0,45">
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Лучший трек для нефоров" FontFamily="FirsNeueMedium" />
+                            <Button FontFamily="FirsNeueMedium" TextColor="#444" Text="See all >"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout  Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="https://images.genius.com/46f5c2d2cedd8f40fcc78a83c1fdcfb9.1000x1000x1.png" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium"  TextColor="White" Margin="-15" Text="9mice x Kai Angel" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="LIPSTICK" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="0">
+                                    <Image Source="https://i.scdn.co/image/ab6761610000e5ebba50ca67ffc3097f6ea1710a" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium" TextColor="White" Margin="-15" Text="Playboy Carti" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="LGBT in My Ass" HorizontalOptions="Center"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="30" Margin="0, 0, 20, 0" BackgroundColor="Transparent" HorizontalOptions="Center">
+                    <StackLayout Margin="0,0,0,45">
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Лучший трек для пацанов" FontFamily="FirsNeueMedium" />
+                            <Button FontFamily="FirsNeueMedium" TextColor="#444" Text="See all >"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout  Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/3/3d/Macan_in_June_2021.png" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium"  TextColor="White" Margin="-15" Text="Macan" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="Брат, брат, брату брат" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="0">
+                                    <Image Source="https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/4d/8f/43/4d8f4393-c163-f897-1451-27fb3a395129/mzl.pqjrjqwh.jpg/486x486bb.png" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium" TextColor="White" Margin="-15" Text="Нурминский" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="Калим, калим на валике" HorizontalOptions="Center"/>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="30" Margin="0, 0, 20, 0" BackgroundColor="Transparent" HorizontalOptions="Center">
+                    <StackLayout Margin="0,0,0,45">
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" HorizontalOptions="Start" FontAttributes="Bold" FontSize="20" Text="Номинация лучший Playlist в истории" FontFamily="FirsNeueMedium" />
+                            <Button FontFamily="FirsNeueMedium" TextColor="#444" Text="See all >"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout  Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="30">
+                                    <Image Source="https://upload.wikimedia.org/wikipedia/ru/0/0f/%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%BD%D0%B0%D1%8F_%D0%BF%D1%8B%D0%BB%D1%8C.jpg" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium"  TextColor="White" Margin="-15" Text="Morgenshtern" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="Легендарная пыль" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <StackLayout Margin="0, 0, 0, -55">
+                                <Frame HorizontalOptions="Start" HeightRequest="130" BackgroundColor="Transparent" CornerRadius="0">
+                                    <Image Source="https://globalcity.info/assets/a3f9b096/images/44/2022/02/16aade328af6f2cc225a1ace0e544d46.jpg/335x280.jpg" />
+                                </Frame>
+                                <Label FontFamily="FirsNeueMedium" TextColor="White" Margin="-15" Text="Виктор Цой" HorizontalOptions="Center"/>
+                                <Label FontFamily="FirsNeueLight" TextColor="White" Margin="10" Text="All Music" HorizontalOptions="Center"/>
+                            </StackLayout>
+
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
             </StackLayout>

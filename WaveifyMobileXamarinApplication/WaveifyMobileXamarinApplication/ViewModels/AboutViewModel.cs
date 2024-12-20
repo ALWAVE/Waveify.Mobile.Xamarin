@@ -31,8 +31,6 @@ namespace WaveifyMobileXamarinApplication.ViewModels
         private string chart5NameArtist;
         private string chart5NameSongArtist;
         private string chart5SongArtistUrlImage;
-
-
         public string BestNameArtist
         {
             get => bestNameArtist;
@@ -200,6 +198,9 @@ namespace WaveifyMobileXamarinApplication.ViewModels
                 OnPropertyChanged();
             }
         }
+      
+
+
 
         public AboutViewModel()
         {
@@ -218,25 +219,28 @@ namespace WaveifyMobileXamarinApplication.ViewModels
             bestSongArtistUrlImage = "https://media.npr.org/assets/img/2021/11/16/gettyimages-1235223332_sq-e88ad790d447bd7dfcb0c1571047db26d39a8ee0.jpg";
 
             //Chart artist
-            Chart1NameArtist = "The Weeknd"; // Замените на нужные данные
-            Chart1NameSongArtist = "Blinding Lights"; // Замените на нужные данные
-            Chart1SongArtistUrlImage = "https://upload.wikimedia.org/wikipedia/ru/7/75/Blinding_Lights.jpg";
+            Chart1NameArtist = "BABY MELO feat.ALWAVE"; // Замените на нужные данные
+            Chart1NameSongArtist = "Говночист"; // Замените на нужные данные
+            Chart1SongArtistUrlImage = "https://the-flow.ru/uploads/images/catalog/element/64be990334689.jpeg";
 
-            Chart2NameArtist = "Drake"; // Замените на нужные данные
-            Chart2NameSongArtist = "God's Plan"; // Замените на нужные данные
-            Chart2SongArtistUrlImage = "https://i1.sndcdn.com/artworks-JHJL0Q9mpSCDOzXF-5hLCAg-t500x500.jpg";
+            Chart2NameArtist = "YASMI"; // Замените на нужные данные
+            Chart2NameSongArtist = "Showbiz 162"; // Замените на нужные данные
+            Chart2SongArtistUrlImage = "https://cdn-images.dzcdn.net/images/cover/f9d667972bca8d8d466af897ed9722bc/500x500-000000-80-0-0.jpg";
 
-            Chart3NameArtist = "Billie Eilish"; // Замените на нужные данные
-            Chart3NameSongArtist = "Bad Guy"; // Замените на нужные данные
-            Chart3SongArtistUrlImage = "https://i1.sndcdn.com/artworks-000515071536-pwrtb4-t500x500.jpg";
+            Chart3NameArtist = "Whole Lotta Swag"; // Замените на нужные данные
+            Chart3NameSongArtist = "Разница"; // Замените на нужные данные
+            Chart3SongArtistUrlImage = "https://images.genius.com/24b4b372e26b0de5088580e73c079a02.1000x1000x1.jpg";
 
             Chart4NameArtist = "Kendrick Lamar"; // Замените на нужные данные
             Chart4NameSongArtist = "Humble"; // Замените на нужные данные
             Chart4SongArtistUrlImage = "https://upload.wikimedia.org/wikipedia/ru/c/c2/Humble.jpg";
 
-            Chart5NameArtist = "Taylor Swift"; // Замените на нужные данные
-            Chart5NameSongArtist = "Shake It Off"; // Замените на нужные данные
-            Chart5SongArtistUrlImage = "https://upload.wikimedia.org/wikipedia/ru/f/fb/Shake_It_Off.jpg";
+            Chart5NameArtist = "ALWAVE"; // Замените на нужные данные
+            Chart5NameSongArtist = "Лёд"; // Замените на нужные данные
+            Chart5SongArtistUrlImage = "https://cdn.zvuk.com/_next/image?url=https%3A%2F%2Fcdn-image.zvuk.com%2Fpic%3Ftype%3Drelease%26id%3D23876673%26size%3D200x200%26hash%3D50b0af67-d527-496e-8d33-01b50933e710&w=200&q=100";
+
+
+
         }
         private async void OnLoginPageView()
         {
