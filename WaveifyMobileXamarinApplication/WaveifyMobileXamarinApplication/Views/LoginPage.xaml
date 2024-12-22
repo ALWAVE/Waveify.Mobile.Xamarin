@@ -46,7 +46,7 @@
             <!-- Email Frame -->
             <Frame BorderColor="#282729" CornerRadius="20" BackgroundColor="#222223" Padding="10" Margin="0,5">
                 <StackLayout>
-                    <Entry x:Name="email" Style="{StaticResource credentialsTxTStyle}" Placeholder="Your email" />
+                    <Entry x:Name="email" Style="{StaticResource credentialsTxTStyle}" Placeholder="Your email" Text="{Binding Email}"  />
                 </StackLayout>
             </Frame>
 
@@ -54,7 +54,7 @@
             <Frame BorderColor="#282729" CornerRadius="20" BackgroundColor="#222223" Padding="10" Margin="0,5">
                 <StackLayout>
                     <!-- <Label Text="Password" Style="{StaticResource credentialTxTtitleStyle}"/> <Label Text="Password" Style="{StaticResource credentialTxTtitleStyle}"/> -->
-                    <Entry x:Name="passbox" Style="{StaticResource credentialsTxTStyle}" Placeholder="Your password" IsPassword="True"/>
+                    <Entry x:Name="passbox" Style="{StaticResource credentialsTxTStyle}" Placeholder="Your password" IsPassword="True" Text="{Binding Password}" />
                 </StackLayout>
             </Frame>
 

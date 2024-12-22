@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="docker-compose.yml" />
     <None Remove="Fonts\TT Interphases Pro Trial Medium.ttf" />
     <None Remove="Fonts\TT Interphases Pro Trial Regular.ttf" />
     <None Remove="Fonts\TTFirsNeue-Black.ttf" />
@@ -20,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Npgsql" Version="7.0.7" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.11" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -34,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="docker-compose.yml" />
     <EmbeddedResource Include="Fonts\TT Interphases Pro Trial Medium.ttf" />
     <EmbeddedResource Include="Fonts\TT Interphases Pro Trial Regular.ttf" />
     <EmbeddedResource Include="Fonts\TTFirsNeue-Black.ttf" />
