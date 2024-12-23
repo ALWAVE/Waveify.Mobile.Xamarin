@@ -38,6 +38,14 @@ namespace WaveifyMobileXamarinApplication.ViewModels
         {
             try
             {
+                // Проверка подключения
+                bool isConnected = await databaseServices.TestConnection();
+                if (!isConnected)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Ошибка", "Не удалось подключиться к базе данных.", "OK");
+                    return;
+                }
+
                 bool isValidUser = await databaseServices.ValidateUser(Email, Password);
 
                 if (isValidUser)
@@ -57,5 +65,6 @@ namespace WaveifyMobileXamarinApplication.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Ошибка", $"Произошла ошибка: {ex.Message}", "OK");
             }
         }
+
     }
 }

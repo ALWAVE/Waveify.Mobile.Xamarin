@@ -26,7 +26,7 @@ namespace WaveifyMobileXamarinApplication.Views
             await button.ScaleTo(1.1, 50); // Увеличение до 120% за 100 мс
             await button.ScaleTo(1.0, 50);
             // URL, на который нужно перейти
-            string url = "https://www.example.com"; // Замените на нужный вам URL
+            string url = "https://localhost:7040/"; // Замените на нужный вам URL
 
             // Открыть URL в браузере
             await Launcher.OpenAsync(new Uri(url));

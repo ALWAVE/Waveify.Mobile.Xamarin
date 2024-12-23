@@ -22,13 +22,13 @@
                 <Frame Margin="10" HeightRequest="60" WidthRequest="60"
                        CornerRadius="60" BackgroundColor="Orange" 
                        VerticalOptions="Center">
-                    <Label Text="C"
+                    <Label Text="A"
                            FontSize="30" TextColor="Black" 
                            HorizontalOptions="Center" 
                            VerticalOptions="Center"
                            FontFamily="IPTMedium"/>
                 </Frame>
-                <Label Text="ChistieRoudi" 
+                <Label Text="admin" 
                        VerticalOptions="Center" 
                        TextColor="White"
                        FontFamily="IPTMedium"/>
