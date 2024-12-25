@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WaveifyMobileXamarinApplication.Views.LoginPage"
-             Shell.NavBarIsVisible="False" BackgroundColor="#222" >
+             Shell.NavBarIsVisible="False" BackgroundColor="Black" >
 
     <ContentPage.Resources>
         <Style x:Key="credentialTxTtitleStyle" TargetType="Label">
@@ -14,7 +14,12 @@
             <Setter Property="Padding" Value="2,0"/>
             <Setter Property="FontFamily" Value="IPTMedium"/>
         </Style>
-
+        <LinearGradientBrush x:Key="PinkRedGradient" StartPoint="1,0" EndPoint="1,1">
+            <GradientStop Color="#FF69B4" Offset="0.0" />
+            <!-- Розовый -->
+            <GradientStop Color="#d60076" Offset="1.0" />
+            <!-- Красный -->
+        </LinearGradientBrush>
         <Style x:Key="credentialsTxTStyle" TargetType="Entry">
             <!-- Исправлено на credentialsTxTStyle -->
             <Setter Property="TextColor" Value="White"/>
@@ -39,9 +44,11 @@
 
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-         
-            <Image Source="icon.png" />
-            <Label HorizontalOptions="Center" Text="Yooo, welcome to waveify!" Style="{StaticResource welcomeLabel}"/>
+
+            <Image Source="WaveifyLogo.ico" WidthRequest="50" HeightRequest="50"/>
+
+
+            <Label HorizontalOptions="Center" Text="Yooo, welcome to Waveify!" Style="{StaticResource welcomeLabel}"/>
             <Label HorizontalOptions="Center" Text="Welcome" Style="{StaticResource credentialTxTtitleStyle}"/>
             <!-- Email Frame -->
             <Frame BorderColor="#282729" CornerRadius="20" BackgroundColor="#222223" Padding="10" Margin="0,5">
@@ -58,21 +65,28 @@
                 </StackLayout>
             </Frame>
 
-            <Button Text="Log in" 
-                    FontFamily="FirsNeueMedium"
-                    BackgroundColor="White" 
-                    TextColor="Black" 
-                    CornerRadius="15" 
-                    BorderColor="#282729"
-                    BorderWidth="2"
-                   
-                    VerticalOptions="Center" 
-                    Command="{Binding LoginCommand}"
-                    >
+            <Grid>
+                <Frame 
 
-            </Button>
-          
-                <Button TextColor="White" 
+               Background="{StaticResource PinkRedGradient}" 
+               CornerRadius="15" 
+               HasShadow="False"
+               Padding="0"
+               VerticalOptions="Center"
+               HorizontalOptions="FillAndExpand">
+                    <Button Text="Log in" 
+                    FontFamily="FirsNeueMedium" 
+                    BackgroundColor="Transparent" 
+                    TextColor="White" 
+                    CornerRadius="15" 
+                    BorderColor="#282729" 
+                    BorderWidth="2" 
+                    VerticalOptions="Center" 
+                    Command="{Binding LoginCommand}" />
+                </Frame>
+            </Grid>
+
+            <Button TextColor="White" 
                 Margin="15"
                 WidthRequest="160"
                 FontFamily="FirsNeueMedium"
@@ -80,7 +94,7 @@
                 FontSize="10" 
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                BorderColor="White"
+                BorderColor="#282729"
                 BorderWidth="1"
                 CornerRadius="30"
                 BackgroundColor="Transparent"

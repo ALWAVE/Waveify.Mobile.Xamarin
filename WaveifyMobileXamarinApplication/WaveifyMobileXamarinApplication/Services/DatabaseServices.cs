@@ -22,7 +22,7 @@ namespace WaveifyMobileXamarinApplication.Services
                 await connection.OpenAsync();
 
                 // Используем параметризованный запрос для избежания SQL-инъекций
-                using (var command = new NpgsqlCommand("SELECT COUNT(*) FROM \"Users\" WHERE \"Email\" = @email AND \"PasswordHash\" = @password", connection))
+                using (var command = new NpgsqlCommand("SELECT COUNT(*) FROM \"Users\" WHERE \"UserName\" = @email AND \"PasswordHash\" = @password", connection))
 
                 {
                     command.Parameters.AddWithValue("email", email);
